@@ -27,7 +27,7 @@ class StorageSession
      */
     public function get($hash)
     {
-        return $_SESSION['basecamp'][$hash];
+        return (isset($_SESSION['basecamp']) && !empty($_SESSION['basecamp'][$hash])) ? $_SESSION['basecamp'][$hash] : null;
     }
 
     /**
