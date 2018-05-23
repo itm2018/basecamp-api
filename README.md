@@ -19,7 +19,7 @@ $ sudo mv composer.phar /usr/local/bin/composer
 Add the following to your require block in composer.json config.
 
 ```
-"arturf/basecamp-api": "dev-master"
+"itm2018/basecamp-api": "dev-master"
 ```
 
 Include Composer's autoloader:
