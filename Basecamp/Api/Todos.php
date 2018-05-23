@@ -40,6 +40,14 @@ class Todos extends AbstractApi
         return $data;
     }
 
+    public function allRemainingByTodolist($projectId, $todolistId)
+    {
+        // /projects/1/todolists/1/todos
+        $data = $this->get('/projects/' . $projectId . '/todolists/' . $todolistId . '/todos/remaining.json');
+
+        return $data;
+    }
+
     /**
      * Create todo.
      *
