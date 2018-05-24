@@ -28,14 +28,14 @@ class Comments extends AbstractApi
      * New comment for todos.
      *
      * @param integer $projectId
-     * @param integer $messageId
+     * @param integer $todoId
      * @param array $params
      *
      * @return object
      */
-    public function createTodoComment($projectId, $messageId, array $params)
+    public function createTodoComment($projectId, $todoId, array $params)
     {
-        $data = $this->post('/projects/' . $projectId . '/todos/' . $messageId . '/comments.json', $params);
+        $data = $this->post('/projects/' . $projectId . '/todos/' . $todoId . '/comments.json', $params);
 
         return $data;
     }
