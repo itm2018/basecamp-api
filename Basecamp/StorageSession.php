@@ -12,10 +12,10 @@ class StorageSession
      */
     public function __construct()
     {
-        if (session_status() == PHP_SESSION_NONE) {
+        /*if (session_status() == PHP_SESSION_NONE) {
             session_id('AtHe3hAtuP');
             session_start();
-        }
+        }*/
     }
 
     /**
